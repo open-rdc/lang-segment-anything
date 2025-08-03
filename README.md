@@ -1,5 +1,17 @@
 # Language Segment-Anything
 
+#### Docker Installation and Execute
+
+Build and run the image.
+
+```bash
+
+git clone https://github.com/open-rdc/lang-segment-anything && cd lang-segment-anything/docker
+./build.sh
+./run.sh
+
+```
+
 Language Segment-Anything is an open-source project that combines the power of instance segmentation and text prompts to generate masks for specific objects in images. Built on the recently released Meta model, Segment Anything Model 2, and the GroundingDINO detection model, it's an easy-to-use and effective tool for object detection and image segmentation.
 
 ![person.png](/assets/outputs/person.png)
@@ -44,18 +56,6 @@ Clone the repository and install the required packages:
 
 git clone https://github.com/luca-medeiros/lang-segment-anything && cd lang-segment-anything
 pip install -e .
-
-```
-
-#### Docker Installation
-
-Build and run the image.
-
-```bash
-
-git clone https://github.com/luca-medeiros/lang-segment-anything && cd lang-segment-anything
-docker build --tag lang-segment-anything:latest .
-docker run --gpus all -p 8000:8000 lang-segment-anything:latest
 
 ```
 
